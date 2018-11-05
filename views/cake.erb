@@ -1,0 +1,32 @@
+<div>
+    <% @cakearray.each do |x| %>
+    
+  <div id='cakecontainer'>
+    
+    
+    <div id='cakeWrap'>
+    <div><img id='cakeimage' src= <%= x.get_url %>></div>
+    <br>
+    <div><%=x.get_des%></div>
+    <br>
+    <div id='cakepriceBox'><%= x.get_price%> </div>
+  
+    <br>
+    
+    </div>
+    <div id='cakeWrap'>
+    <div><img id='cakeimage' src= <%= x.get_url %>></div>
+    <br>
+    <div id='cakedesBox'><%=x.get_des%></div>
+    <br>
+    <div id='cakepriceBox'><%= x.get_price%> </div>
+  
+    <br>
+    
+    </div>
+    
+    </div>
+
+    <% end %>
+    
+</div>

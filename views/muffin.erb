@@ -1,0 +1,32 @@
+<div>
+    <% @muffinarray.each do |x| %>
+    
+    <div id='muffincontainer'>
+    
+    
+    <div id='muffinWrap'>
+    <div><img id='muffinimage' src= <%= x.get_url %>></div>
+    <br>
+    <div><%=x.get_des%></div>
+    <br>
+    <div id='cakepriceBox'><%= x.get_price%> </div>
+  
+    <br>
+    
+    </div>
+    <div id='muffinWrap'>
+    <div><img id='muffinimage' src= <%= x.get_url %>></div>
+    <br>
+    <div id='muffindesBox'><%=x.get_des%></div>
+    <br>
+    <div id='muffinpriceBox'><%= x.get_price%> </div>
+  
+    <br>
+    
+    </div>
+    
+    </div>
+
+    <% end %>
+    
+</div>

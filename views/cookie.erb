@@ -1,0 +1,32 @@
+<div>
+    <% @cookiearray.each do |x| %>
+    
+   <div id='cookiecontainer'>
+    
+    
+    <div id='cookieWrap'>
+    <div><img id='cookieimage' src= <%= x.get_url %>></div>
+    <br>
+    <div><%=x.get_des%></div>
+    <br>
+    <div id='cookiepriceBox'><%= x.get_price%> </div>
+  
+    <br>
+    
+    </div>
+    <div id='cookieWrap'>
+    <div><img id='cookieimage' src= <%= x.get_url %>></div>
+    <br>
+    <div id='cookiedesBox'><%=x.get_des%></div>
+    <br>
+    <div id='cookiepriceBox'><%= x.get_price%> </div>
+  
+    <br>
+    
+    </div>
+    
+    </div>
+
+    <% end %>
+    
+</div>
